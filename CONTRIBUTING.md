@@ -2,7 +2,7 @@
 
 ## New to git?
 
-No worries! This is a club to *learn and grow* after all. You can find a wonderful tutorial on getting started with git [here](localhost).
+No worries! This is a club to *learn and grow* after all. You can find a wonderful tutorial on getting started with git [here](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow).
 
 **Initial steps:**
 
@@ -34,7 +34,7 @@ Once you've finished coding, take the following steps to get your contribution m
 - Push the local branch to your remote branch.
 - In GitHub, create a pull request to ISU Web Dev Club's club-website repo. Use the branch name (without underscores) as the title of the pull request, and copy/paste the [template listed below](#pull-request-template) into the pull request text body. Make sure you list someone from the club to review your code before it gets merged.
 - The reviewer may make recommendations for fixes before your code can be merged. Address any code review comments and commit/push them to your repo. There's no need to create another pull request, the pushed changes will reflect in your outstanding pull request.
-- Once the reviewer is satisfied, he'll give it a +1 using the [template listed below](#code-review-+1-template).
+- Once the reviewer is satisfied, he'll give it a +1 using the [template listed below](#code-review-1-template).
 - One of the officers will merge the pull request, and voilá! You have successfully contributed to the ISU Web Development Club's website. Your changes won't be visible right away, but will show up in the next production release.
 
 ## Code Format / Standards
