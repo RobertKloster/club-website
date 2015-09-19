@@ -145,3 +145,10 @@ var CarouselItem = React.createClass({
         $('#project').load(this.props.project['page']);
     }
 });
+
+$.getJSON('portfolios.json', function(data) {
+    React.render(
+        <PortfolioCarousel portfolio={data} />,
+        document.getElementById('content')
+    );
+});

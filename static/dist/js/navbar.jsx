@@ -19,3 +19,8 @@ var NavBar = React.createClass({
         );
     }
 });
+
+React.render(
+    <NavBar />,
+    document.getElementById('navbar')
+);
