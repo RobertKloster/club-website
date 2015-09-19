@@ -146,7 +146,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../static/dist/js/bootstrap.min.js"></script>
 <script>
-    $.get('dummypage.html').success(function (data) {
+    $.get('/site/web-dev-club/photo-gallery/129/album').success(function (data) {
 //        The goal here is to pull from https://www.stuorg.iastate.edu/site/web-dev-club/photo-gallery
         $(data).find('.image').appendTo('#photos-container');
     }).error(function () {
