@@ -6,7 +6,7 @@ document.write('\
             <li>\
                 <img src="http://placecage.com/100/100" class="img-circle" />\
             </li>\
-            <li><a href="../home/home.html">Home</a></li>\
+            <li><a href="index.html">Home</a></li>\
             <li><a href="../about/about.html">About</a></li>\
             <li><a href="../portfolio/portfolio.html">Portfolio</a></li>\
             <li><a href="../members/members.html">Members</a></li>\
