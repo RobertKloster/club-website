@@ -16,7 +16,7 @@
     <link href="../static/dist/css/bootstrap.css" rel="stylesheet">
 
     <!--Site-wide CSS styles-->
-    <!--<link href="../static/dist/css/site-theme.css" rel="stylesheet">-->
+    <link href="../static/dist/css/site-theme.css" rel="stylesheet">
 
     <!-- Put custom styles for this page here -->
     <link href="../static/dist/css/about.css" rel="stylesheet">
@@ -39,35 +39,30 @@
     <div id="club-purpose">
         <h2>Purpose</h2>
 
-        <ul class="list-group">
-            <li class="list-group-item">1) To promote learning and professional growth in the field of web
-                development.
-            </li>
-            <li class="list-group-item">2) To establish a network of like-minded individuals who want to pursue web
-                development.
-            </li>
-            <li class="list-group-item">3) To give back to the Iowa State University community and local community by
-                offering web development services
-                to students, faculty, and clubs and organizations.
-            </li>
-            <li class="list-group-item">4) To give back to the greater web development community by writing and posting
-                public code libraries,
-                extensions, plugins, etc.
-            </li>
-        </ul>
+        <div id="purpose-list-container">
+            <ol>
+                <li>To promote learning and professional growth in the field of web development.
+                </li>
+                <li>To establish a network of like-minded individuals who want to pursue web development.
+                </li>
+                <li>To give back to the Iowa State University community and local community by offering web development
+                    services to students, faculty, and clubs and organizations.
+                </li>
+                <li>To give back to the greater web development community by writing and posting public code libraries,
+                    extensions, plugins, etc.
+                </li>
+            </ol>
+        </div>
     </div>
 
     <div id="club-history">
         <h2>History</h2>
 
         <p>The first semester of the club's existence started out with a bang! Our numbers grew rapidly, and everyone
-            was
-            eager to get started. As expected, there was a massive amount of interest in the club even before we began
-            to
-            promote ourselves. "I'm surprised there wasn't already a Web Development Club," was a common expression when
-            we
-            told others about the club. People of all skill levels joined and brought a wide range of skills to the
-            table.<br></p>
+            was eager to get started. As expected, there was a massive amount of interest in the club even before we
+            began to promote ourselves. "I'm surprised there wasn't already a Web Development Club," was a common
+            expression when we told others about the club. People of all skill levels joined and brought a wide range of
+            skills to the table.<br></p>
 
         <ul class="media-list">
             <li class="media">
@@ -92,7 +87,8 @@
                 <div class="media-right">
                     <a href="#">
                         <img class="media-object" src="../_images/first_meeting.jpg"
-                             alt="The attendees of the first club meeting" style="height:150px; border: thin solid">
+                             alt="The attendees of the first club meeting"
+                             style="height:150px; border: thin solid white">
                     </a>
                 </div>
             </li>
@@ -101,7 +97,7 @@
                     <a href="#">
                         <img class="media-object" src="../_images/ClubFest_table_Fall_2015.JPG"
                              alt="The president and vice president at ClubFest"
-                             style="height:150px; border: thin solid">
+                             style="height:150px; border: thin solid white">
                     </a>
                 </div>
                 <div class="media-body media-middle">
@@ -124,15 +120,16 @@
                 </div>
                 <div class="media-right">
                     <img class="media-object" src="http://placecage.com/150/150"
-                         alt="Nic Cage was ever-present during the hackathon" style="height:150px; border: thin solid">
+                         alt="Nic Cage was ever-present during the hackathon"
+                         style="height:150px; border: thin solid white">
                 </div>
             </li>
         </ul>
-        <br><br>
     </div>
 
     <div id="club-photos">
         <h2>Photo Gallery</h2>
+
         <div id="photos-container">
         </div>
     </div>
@@ -142,7 +139,7 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<!--<script src="../static/dist/js/ie10-viewport-bug-workaround.js"></script>-->
+<script src="../static/dist/js/ie10-viewport-bug-workaround.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../static/dist/js/bootstrap.min.js"></script>
 <script>
