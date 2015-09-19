@@ -30,8 +30,21 @@
 
 <body>
 
-<!-- The following line loads the navbar -->
-<script src="static/dist/js/navbar.js"></script>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li>
+                <img src="http://placecage.com/100/100" class="img-circle"/>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about/about.html">About</a></li>
+            <li><a href="portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="members/members.html">Members</a></li>
+            <li><a href="resources/resources.html">Resources</a></li>
+            <li><a href="contact/contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
 
 <div class="bg"></div>
 <div class="jumbotron">
@@ -46,12 +59,23 @@
     <div class="row">
 
         <div class="col-md-6">
-            <h2>Announcements</h2>
-            <!--The javascript at the bottom loads this with announcements from the Student Organization database.-->
-            <div id="announcements-blockquote"></div>
+            <div id="meetings">
+                <h2>Meetings</h2>
+
+                <div id="meeting-info" style="margin: 20px 0 50px 50px">
+                    <h3><span class="label label-primary">When:&nbsp;</span>&nbsp;&nbsp;Wednesdays, 4:10 - 5:00 pm</h3>
+
+                    <h3><span class="label label-primary">Where:</span>&nbsp;&nbsp;Coover 1016</h3>
+                </div>
+            </div>
+            <div id="annoucements">
+                <h2>Announcements</h2>
+                <!--The javascript at the bottom loads this with announcements from the Student Organization database.-->
+                <div id="announcements-blockquote"></div>
+            </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6" id="twitter-feed">
             <a class="twitter-timeline" href="https://twitter.com/ISU_Web_Dev" data-widget-id="633110712139673600">Tweets
                 by @ISU_Web_Dev</a>
             <script>!function (d, s, id) {
@@ -66,12 +90,14 @@
         </div>
     </div>
 
-    <br><br><br><br>
-
-    <div class="container" style="height: 600px">
-        <h2>Calendar of Events</h2>
+    <div class="row" style="height: 600px">
+        <h2 style="margin: 50px 0 25px 0">Calendar of Events</h2>
         <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=isuwebdevclub%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago"
                 style=" border-width:0 " width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div class="row" style="margin-top: 100px">
+        <!--Needed to get distance off the calendar for any follow-on content, such as footer-->
     </div>
 </div>
 <!-- /container -->
