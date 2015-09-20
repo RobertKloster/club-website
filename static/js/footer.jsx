@@ -8,13 +8,13 @@ var Footer = React.createClass({
                     </p>
                 </span>
                 <span className="pull-right" style={{marginTop: '20px'}}>
-                    <a className="btn btn-social-icon btn-facebook" href="https://www.facebook.com/ISUWebDevelopment">
+                    <a className="btn btn-social-icon btn-facebook" href="https://www.facebook.com/ISUWebDevelopment" target="blank">
                         <i className="fa fa-facebook"></i>
                     </a>
-                    <a className="btn btn-social-icon btn-twitter" herf="https://twitter.com/ISU_Web_Dev">
+                    <a className="btn btn-social-icon btn-twitter" href="https://twitter.com/ISU_Web_Dev" target="blank">
                         <i className="fa fa-twitter"></i>
                     </a>
-                    <a className="btn btn-social-icon btn-github" href="https://github.com/ISU-WebDevClub/club-website">
+                    <a className="btn btn-social-icon btn-github" href="https://github.com/ISU-WebDevClub/club-website" target="blank">
                         <i className="fa fa-github"></i>
                     </a>
                 </span>
