@@ -13,14 +13,14 @@
         <title>Web Development Club | Iowa State University</title>
 
         <!-- Vendor CSS -->
-        <link rel="stylesheet" href="static/dist/vend/bootstrap-3.3.5/bootstrap.min.css" />
-        <link rel="stylesheet" href="static/dist/vend/bootstrap-3.3.5/bootstrap-theme.min.css" />
-        <link rel="stylesheet" href="static/dist/vend/font-awesome-4.4.0/font-awesome.min.css" />
-        <link rel="stylesheet" href="static/dist/vend/bootstrap-social-4.10.1.css" />
+        <link rel="stylesheet" href="static/vend/bootstrap-3.3.5/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/vend/bootstrap-3.3.5/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="static/vend/font-awesome-4.4.0/font-awesome.min.css" />
+        <link rel="stylesheet" href="static/vend/bootstrap-social-4.10.1.css" />
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="static/dist/css/site-theme.css" />
-        <link href="static/dist/css/jumbotron.css" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/site-theme.css" />
+        <link href="static/css/jumbotron.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -89,23 +89,23 @@
 
         <!-- Vendor JS -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type="text/javascript" src="static/dist/js/ie10-viewport-bug-workaround.js"></script>
-        <script type="text/javascript" src="static/dist/vend/bootstrap-3.3.5/bootstrap.min.js"></script>
-        <script type="text/javascript" src="static/dist/vend/react-0.13.3/react.min.js"></script>
-        <script type="text/javascript" src="static/dist/vend/react-0.13.3/JSXTransformer.js"></script>
+        <script type="text/javascript" src="static/js/ie10-viewport-bug-workaround.js"></script>
+        <script type="text/javascript" src="static/vend/bootstrap-3.3.5/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/vend/react-0.13.3/react.min.js"></script>
+        <script type="text/javascript" src="static/vend/react-0.13.3/JSXTransformer.js"></script>
 
         <!-- Custom JSX -->
-        <script type="text/jsx" src="static/dist/js/navbar.jsx"></script>
+        <script type="text/jsx" src="static/js/navbar.jsx"></script>
         <script type="text/jsx">
             React.render(
                 <NavBar active="Home" />,
                 document.getElementById('navbar')
             );
         </script>
-        <script type="text/jsx" src="static/dist/js/footer.jsx"></script>
+        <script type="text/jsx" src="static/js/footer.jsx"></script>
 
         <!-- Custom JS -->
-        <script src="static/dist/js/jumbotron_parallax.js"></script>
+        <script src="static/js/jumbotron_parallax.js"></script>
         <script>
             $.get('/site/web-dev-club').success(function (data) {
                 // The goal here is to pull from https://www.stuorg.iastate.edu/site/web-dev-club
