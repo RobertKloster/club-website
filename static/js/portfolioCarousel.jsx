@@ -82,7 +82,7 @@ var PortfolioCarousel = React.createClass({
 
         return (
             <div>
-                <div id="project-carousel" className="carousel slide" data-ride="carousel">
+                <div id="project-carousel" className="carousel slide" data-ride="carousel" style={{backgroundColor: '#444444'}}>
                     <ol className="carousel-indicators">
                         {indicators}
                     </ol>
@@ -130,12 +130,13 @@ var CarouselItem = React.createClass({
     render: function() {
         return (
             <div className={'item' + (this.props.active ? ' active' : '')}>
-                <a href="javascript:void(0);" onClick={this.renderProject}>
-                    <img src={this.props.project['image']} alt={this.props.title} style={{height: '500px', maxWidth: '100%', display: "block", marginLeft: "auto", marginRight: "auto"}} />
-                </a>
+                <img src={this.props.project['image']} alt={this.props.title} style={{height: '500px', maxWidth: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto'}} />
                 <div className="carousel-caption">
                     <h3>{this.props.title}</h3>
                     <p>{this.props.project['description']}</p>
+                    <p>
+                        <a className="btn btn-primary" href="javascript:void(0);" onClick={this.renderProject} role="button">Learn More</a>
+                    </p>
                 </div>
             </div>
         );
