@@ -28,63 +28,83 @@
     <![endif]-->
 </head>
 <body>
-    <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
     <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li>
-                <img src="http://placecage.com/100/100" class="img-circle" />
-            </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about/about.html">About</a></li>
-            <li><a href="portfolio/portfolio.html">Portfolio</a></li>
-            <li><a href="members/members.html">Members</a></li>
-            <li><a href="resources/resources.html">Resources</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </div>
-    </nav>
-    <div class="bg"></div>
-    <div class="jumbotron">
-        <div class="container">
-            <h2 class="page-header">Want us to make your website?</h2>
-            <p>Contact us</p>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="corner-logo-shadow" class="navbar-brand" href="#"><img id="corner-logo" src="_images/WDC-logo.png"
+                                                                          alt="Web Development Club Logo"></a>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-left: 120px">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about/about.html">About</a></li>
+                <li><a href="portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="members/members.html">Members</a></li>
+                <li><a href="resources/resources.html">Resources</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Contact Us<span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-    <!-- Form for requests -->
+    <!-- /.container-fluid -->
+</nav>
+
+<div class="bg"></div>
+<div class="jumbotron">
     <div class="container">
-        <div class="container">
+        <h2 class="page-header">Want us to make your website?</h2>
+
+        <p>Contact us</p>
+    </div>
+</div>
+<!-- Form for requests -->
+<div class="container">
+    <div class="container">
         <h3 class="page-header">Send us a message!</h3>
-        </div>
-        <div class="container">
-        <div class="col-lg-8">
-        <form>
-            <div class="form-group">
-                <label for="email">Your Email Address</label>
-                <input type="email" class="form-control" id="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <label for="org">Your Name or Organization</label>
-                <input type="text" class="form-control" id="org" placeholder="Name/Organization">
-            </div>
-            <div class="form-group">
-                <label for="msg">Your Message</label>
-                <textarea class="form-control" rows="3" type="text" id="msg"\
-                 placeholder="Message"></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
-        </div>
-        
-        </div>
-        
-        </div>
-    </div>
     </div>
     <div class="container">
-        <h4 class="page-header">Form not working?</h4>
-        <p>Email us at isuwebdevclub@gmail.com</p>
+        <div class="col-lg-8">
+            <form>
+                <div class="form-group">
+                    <label for="email">Your Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="org">Your Name or Organization</label>
+                    <input type="text" class="form-control" id="org" placeholder="Name/Organization">
+                </div>
+                <div class="form-group">
+                    <label for="msg">Your Message</label>
+                <textarea class="form-control" rows="3" type="text" id="msg" \
+                          placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+
     </div>
+
+</div>
+</div>
+</div>
+<div class="container">
+    <h4 class="page-header">Form not working?</h4>
+
+    <p>Email us at isuwebdevclub@gmail.com</p>
+</div>
 </body>
 </html>
