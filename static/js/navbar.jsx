@@ -8,7 +8,7 @@ var NavBar = React.createClass({
     },
 
     rightPages: {
-        'Contact Us': 'contact/contact.html'
+        'Contact Us': 'contact.html'
     },
 
     propTypes: {
