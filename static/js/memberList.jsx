@@ -30,7 +30,12 @@ var MemberList = React.createClass({
         var rows = [];
         var row = [];
         var rowSize = 0;
-        for (var member in this.props.members['members']) {
+        for (var i in members) {
+            if (!members.hasOwnProperty(i)) {
+                continue;
+            }
+
+            var member = members[i];
             if (!this.props.members['members'].hasOwnProperty(member)) {
                 continue;
             }
