@@ -10,7 +10,7 @@
         <meta name="description" content="The Web Development Club at Iowa State University is a community of students who want to learn about and practice web development.">
         <meta name="author" content="ISU Web Dev Club members">
         <link rel="icon" href="../favicon.ico">
-        <title>WDC About</title>
+        <title>About | Web Development Club</title>
 
         <!-- Vendor CSS -->
         <link rel="stylesheet" href="../static/vend/bootstrap-3.3.5/bootstrap.min.css" />
@@ -153,16 +153,16 @@
         <script type="text/jsx" src="../static/js/navbar.jsx"></script>
         <script type="text/jsx">
             React.render(
-                <NavBar active="About" nested={1} />,
-                document.getElementById('navbar')
+                    <NavBar active="About" nested={1} />,
+                    document.getElementById('navbar')
             );
         </script>
         <script type="text/jsx" src="../static/js/footer.jsx"></script>
 
-        <!-- Custom JS -->
+        <!--Custom JS-->
         <script>
             $.get('/site/web-dev-club/photo-gallery/129/album').success(function (data) {
-                // The goal here is to pull from https://www.stuorg.iastate.edu/site/web-dev-club/photo-gallery
+        //        The goal here is to pull from https://www.stuorg.iastate.edu/site/web-dev-club/photo-gallery
                 $(data).find('.image').appendTo('#photos-container');
             }).error(function () {
                 console.log('There was a problem connecting to the student organization database. (This error should disappear once the page is on the iastate.edu domain)');
