@@ -148,6 +148,12 @@
 
         <!-- Custom JSX -->
         <script type="text/jsx" src="../static/dist/js/navbar.jsx"></script>
+        <script type="text/jsx">
+            React.render(
+                <NavBar active="About" nested={1} />,
+                document.getElementById('navbar')
+            );
+        </script>
         <script type="text/jsx" src="../static/dist/js/footer.jsx"></script>
 
         <!-- Custom JS -->

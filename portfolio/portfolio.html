@@ -52,6 +52,12 @@
 
         <!-- Custom JSX -->
         <script type="text/jsx" src="../static/dist/js/navbar.jsx"></script>
+        <script type="text/jsx">
+            React.render(
+                <NavBar active="Portfolio" nested={1} />,
+                document.getElementById('navbar')
+            );
+        </script>
         <script type="text/jsx" src="../static/dist/js/footer.jsx"></script>
         <script type="text/jsx" src="../static/dist/js/portfolioCarousel.jsx"></script>
     </body>
