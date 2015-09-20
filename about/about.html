@@ -142,20 +142,32 @@
 
         <div id="footer"></div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../static/dist/js/ie10-viewport-bug-workaround.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../static/dist/vend/bootstrap-3.3.5/bootstrap.min.js"></script>
-<script>
-    $.get('/site/web-dev-club/photo-gallery/129/album').success(function (data) {
-//        The goal here is to pull from https://www.stuorg.iastate.edu/site/web-dev-club/photo-gallery
-        $(data).find('.image').appendTo('#photos-container');
-    }).error(function () {
-        console.log('There was a problem connecting to the student organization database. (This error should disappear once the page is on the iastate.edu domain)');
-        $('#photos-container').append('<br><p>There was a problem connecting to the student organization database. (This error should disappear once the page is on the iastate.edu domain)<br><br><a class="btn btn-default" href="https://www.stuorg.iastate.edu/site/web-dev-club/photo-gallery" target="_blank" role="button">Go to WDC Student Organization photo gallery &raquo;</a>');
-    });
-</script>
-</body>
+        <!-- Vendor JS -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/js/ie10-viewport-bug-workaround.js"></script>
+        <script type="text/javascript" src="../static/vend/bootstrap-3.3.5/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../static/vend/react-0.13.3/react.min.js"></script>
+        <script type="text/javascript" src="../static/vend/react-0.13.3/JSXTransformer.js"></script>
+
+        <!-- Custom JSX -->
+        <script type="text/jsx" src="../static/js/navbar.jsx"></script>
+        <script type="text/jsx">
+            React.render(
+                    <NavBar active="About" nested={1} />,
+                    document.getElementById('navbar')
+            );
+        </script>
+        <script type="text/jsx" src="../static/js/footer.jsx"></script>
+
+        <!--Custom JS-->
+        <script>
+            $.get('/site/web-dev-club/photo-gallery/129/album').success(function (data) {
+        //        The goal here is to pull from https://www.stuorg.iastate.edu/site/web-dev-club/photo-gallery
+                $(data).find('.image').appendTo('#photos-container');
+            }).error(function () {
+                console.log('There was a problem connecting to the student organization database. (This error should disappear once the page is on the iastate.edu domain)');
+                $('#photos-container').append('<br><p>There was a problem connecting to the student organization database. (This error should disappear once the page is on the iastate.edu domain)<br><br><a class="btn btn-default" href="https://www.stuorg.iastate.edu/site/web-dev-club/photo-gallery" target="_blank" role="button">Go to WDC Student Organization photo gallery &raquo;</a>');
+            });
+        </script>
+    </body>
 </html>
