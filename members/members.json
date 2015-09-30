@@ -27,6 +27,10 @@
     "Das Nick Cage": {
       "image": "http://www.placecage.com/g/500/500",
       "description": "Weirder than Weird Al"
+    },
+    "Steff Bisinger": {
+      "image": "../_images/members/steff-bisinger.jpg",
+      "description": "WDC Founding Member, Model#INFOSEC1337"
     }
   }
 }
