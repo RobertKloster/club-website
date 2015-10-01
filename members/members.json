@@ -27,6 +27,10 @@
     "Das Nick Cage": {
       "image": "http://www.placecage.com/g/500/500",
       "description": "Weirder than Weird Al"
+    },
+    "Leelabari Fulbel": {
+      "image": "../_images/leeimage.jpg",
+      "description": "Has a strong interest in school buses"
     }
   }
 }
