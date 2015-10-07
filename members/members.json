@@ -28,9 +28,9 @@
       "image": "http://www.placecage.com/g/450/450",
       "description": "I am not a demon. I am a lizard, a shark, a heat-seeking panther."
     },
-    "Das Nick Cage": {
-      "image": "http://www.placecage.com/g/500/500",
-      "description": "Weirder than Weird Al"
+    "Robert Stemig": {
+      "image": "../_images/members/stemig-robert-md.jpg",
+      "description": "Junior in Computer Engineering"
     }
   }
 }
