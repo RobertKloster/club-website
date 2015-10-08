@@ -1,40 +1,28 @@
 {
   "members": {
-    "Nicolas Cage": {
-      "image": "http://www.placecage.com/g/200/200",
-      "description": "Mustachio extraordinaire"
+    "Nathan Karasch": {
+      "image": "../_images/members/Karasch-Nathan-md.jpg",
+      "description": "WDC President. Retired rockstar. US Marine. Cookie monster."
     },
     "Jeffrey Judge": {
       "image": "../_images/members/judge-jeffrey-md.jpeg",
       "description": "Freshman in Computer Science"
     },
-    "Nicky Cage": {
-      "image": "http://www.placecage.com/g/300/300",
-      "description": "My hair is a bird"
+    "Michielu Menning": {
+      "image": "../_images/members/Menning-Michielu-md.jpg" ,
+      "description": "Look good, feel good. feel good, do good."
     },
     "Branden Lange": {
       "image": "../_images/members/branden-lange-md.jpg",
       "description": "What are snails even trying to do?"
     },
-    "Nickola Cage": {
-      "image": "http://www.placecage.com/g/350/350",
-      "description": "What is love?"
-    },
-    "Cagicus Nickolus": {
-      "image": "http://www.placecage.com/g/400/400",
-      "description": "Smiles that make babies cry"
-    },
-    "Nich Cage": {
-      "image": "http://www.placecage.com/g/450/450",
-      "description": "I am not a demon. I am a lizard, a shark, a heat-seeking panther."
-    },
-    "Das Nick Cage": {
-      "image": "http://www.placecage.com/g/500/500",
-      "description": "Weirder than Weird Al"
-    },
     "Steff Bisinger": {
       "image": "../_images/members/steff-bisinger-md.jpg",
       "description": "WDC Founding Member, Model#INFOSEC1337"
+    },
+    "Robert Stemig": {
+      "image": "../_images/members/stemig-robert-md.jpeg",
+      "description": "Junior in Computer Engineering"
     }
   }
 }
