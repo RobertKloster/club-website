@@ -1,21 +1,22 @@
 {
   "members": {
-    "Nicolas Cage": {
-      "image": "http://www.placecage.com/g/200/200",
-      "description": "Mustachio extraordinaire"
+    "Nathan Karasch": {
+      "image": "../_images/members/Karasch-Nathan-md.jpg",
+      "description": "WDC President. Retired rockstar. US Marine. Cookie monster."
     },
     "Jeffrey Judge": {
       "image": "../_images/members/judge-jeffrey-md.jpeg",
       "description": "Freshman in Computer Science"
     },
-    "Nicky Cage": {
-      "image": "http://www.placecage.com/g/300/300",
-      "description": "My hair is a bird"
+    "Michielu Menning": {
+      "image": "../_images/members/Menning-Michielu-md.jpg" ,
+      "description": "Look good, feel good. feel good, do good."
     },
     "Branden Lange": {
       "image": "../_images/members/branden-lange-md.jpg",
       "description": "What are snails even trying to do?"
     },
+<<<<<<< HEAD
     "Robert Kloster": {
       "image": "../_images/members/Kloster-Robert-md.jpg",
       "description": "If everything's coming your way, you're in the wrong lane."
@@ -35,6 +36,11 @@
     "Das Nick Cage": {
       "image": "http://www.placecage.com/g/500/500",
       "description": "Weirder than Weird Al"
+=======
+    "Robert Stemig": {
+      "image": "../_images/members/stemig-robert-md.jpeg",
+      "description": "Junior in Computer Engineering"
+>>>>>>> b9f79c5cfb58b2d25b15d44d3ebadad42f4c1fb2
     }
   }
 }
