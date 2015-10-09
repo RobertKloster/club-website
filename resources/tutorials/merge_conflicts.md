@@ -49,28 +49,47 @@ In SourceTree, ensure that you are working in the correct local branch, because 
 the changes will only affect the active branch. In the left sidebar under **Branches** you can see that
 "Nathan_Karasch_member_gridsq..." is bolded, meaning it's the active branch.
 
-If this is your first time pulling from the main repository, you'll need to add it
+If this is your first time pulling from the main repository, you'll need to add it to your list of remote repositories.
+In the main menu, click **Repository** > **Repository Settings**. Click **Add**, and paste in the URL from the main
+repository (in our case, it's the ISU-WebDevClub/club-website repo). I've given it the name "upstream". Click **OK**.
 
 ![Adding another remote repository in SourceTree](../../_images/resources/tutorials/merge_conflict/merge-conflicts-01a.png)
 
+If you added "upstream" for the first time, you won't see any of it's branches until you *fetch* from upstream. To do
+that, right click on the upstream remote in the sidebar and click **Fetch from upstream**. You'll see a small caret
+appear to the left of the remote, and you can expand it to see all the branches in that repository. The "master" branch
+is the one we care about.
+
+Finally, to pull upstream/master into your local branch, right click the master branch and click **Pull upstream/master into [your branch]**.
+
 ![Using SourceTree to pull upstream master into your local branch](../../_images/resources/tutorials/merge_conflict/merge-conflicts-01b.png)
+
+After it attempts to pull in the changes from upstream, you'll see the following error message. It's basically telling
+you what you already know: that you have merge conflicts that have to be resolved before the pulled changes can be
+committed.
 
 ![Hitting a merge conflict in SourceTree when trying to pull upstream master into your local branch](../../_images/resources/tutorials/merge_conflict/merge-conflicts-02.png)
 
 ### Step 2: Find the conflicting file(s)
 
+Identifying the conflicting file(s) is easy. It tells you in the error message, but if you switch to the **Working Copy**
+view in the left sidebar, you can see all the files from the pull have been staged except the conflicting one(s).
+
 ![The File Status screen in SourceTree when you have a merge conflict](../../_images/resources/tutorials/merge_conflict/merge-conflicts-03.png)
+
+#### Understanding the added notation
+
+For every conflict in a file, there are three special lines that appear: `<<<<<<< HEAD`, `=======`, and 
+`>>>>>>> [gibberish]`. The stuff in between the angle brackets is the stuff in conflict. The equals sign line separates
+the two conflicting pieces of code. The stuff in the upper part is what's in your local branch (on your computer).
+The stuff in the lower part is what you're trying to merge into your branch. The goal is to make them both work together,
+and then remove the `<<<<<<<`, `=======`, and `>>>>>>>` lines.
 
 ![The conflicting file, as seen in Sublime Text 2](../../_images/resources/tutorials/merge_conflict/merge-conflicts-04.png)
 
 ### Step 3: Resolve the conflicts
 
-Basically, when you look at the members.json file you see there are three strange lines in there: <<<<<<<<< HEAD, =======,
-and >>>>>>>> [gibberish]. The stuff in between the <<<< and >>>> is the stuff in conflict. The ==== separates the two conflicting pieces of code.
-The stuff in the upper part is what's in your local branch (on your computer). The stuff in the lower part is what you're trying merged in.
-You need to make them both work together, and then remove the <<<<, ====, and >>>> lines. So, in your case, you want to keep the
-"Robert Kloster" items and the "Robert Stemig" items, but discard the Nic Cage stuff. I hope that's not too confusing. If it is,
-wait until tomorrow and hopefully I'll have that how-to doc up for reference.
+
 
 ![Finding the Resolve Conflicts command in the WebStorm menu](../../_images/resources/tutorials/merge_conflict/merge-conflicts-05.png)
 
