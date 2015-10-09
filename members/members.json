@@ -16,31 +16,17 @@
       "image": "../_images/members/branden-lange-md.jpg",
       "description": "What are snails even trying to do?"
     },
-<<<<<<< HEAD
     "Robert Kloster": {
       "image": "../_images/members/Kloster-Robert-md.jpg",
-      "description": "If everything's coming your way, you're in the wrong lane."
+      "description": "Senior in Software Engineering."
     },
-    "Nickola Cage": {
-      "image": "http://www.placecage.com/g/350/350",
-      "description": "What is love?"
+    "Steff Bisinger": {
+      "image": "../_images/members/steff-bisinger-md.jpg",
+      "description": "WDC Founding Member, Model#INFOSEC1337"
     },
-    "Cagicus Nickolus": {
-      "image": "http://www.placecage.com/g/400/400",
-      "description": "Smiles that make babies cry"
-    },
-    "Nich Cage": {
-      "image": "http://www.placecage.com/g/450/450",
-      "description": "I am not a demon. I am a lizard, a shark, a heat-seeking panther."
-    },
-    "Das Nick Cage": {
-      "image": "http://www.placecage.com/g/500/500",
-      "description": "Weirder than Weird Al"
-=======
     "Robert Stemig": {
       "image": "../_images/members/stemig-robert-md.jpeg",
       "description": "Junior in Computer Engineering"
->>>>>>> b9f79c5cfb58b2d25b15d44d3ebadad42f4c1fb2
     }
   }
 }
