@@ -115,7 +115,17 @@ entries.
 
 ### Step 4: Commit and push your branch
 
+When you switch back to SourceTree, you'll see the conflicting file(s) automatically jump up into the Staged Files area.
+It even creates a default commit message for you, outlining which branch you merged into your own and which file(s)
+were in conflict.
+
 ![The File Status screen in SourceTree after resolving merge conflicts](../../_images/resources/tutorials/merge_conflict/merge-conflicts-09.png)
 
 ## Conclusion
 
+Don't be dismayed when you see merge conflicts in your branch! They are a regular part of collaborative software
+development, so unless you plan on working alone the rest of your career, you are bound to see these all the time.
+Stay ahead of the game by pulling from upstream often, and check the status of your pull request immediately after
+you create it. There's no point in a reviewer looking at your code until it is free of conflicts and ready to be merged.
+
+Until then, happy coding!
