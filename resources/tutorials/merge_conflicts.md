@@ -89,13 +89,27 @@ and then remove the `<<<<<<<`, `=======`, and `>>>>>>>` lines.
 
 ### Step 3: Resolve the conflicts
 
-
+You can do this part manually if you want, but WebStorm actually has a very handy feature that helps to resolve merge
+conflicts. In the menu bar, click **VCS** > **Git** > **Resolve Conflicts**. This will bring up a list of any files
+with merge conflicts. Pick one and click **Merge**.
 
 ![Finding the Resolve Conflicts command in the WebStorm menu](../../_images/resources/tutorials/merge_conflict/merge-conflicts-05.png)
 
+Now, instead of seeing the angle bracket and equal sign lines, WebStorm lays it out nicely for you in three panes.
+The left pane has local changes, the right pane has changes from the server, and the middle is what your final result
+looks like. Any changes in blue are safe -- they're not in conflict, and can be safely applied. Changes in red are the
+ones in conflict. You can click either the `X` or the `<<` / `>>` buttons to choose which changes to discard or apply.
+However, often you'll need to simply click in the Merge Result box and type in the changes manually to get it just right.
+
 ![Merge Revisions dialog box in WebStorm before making changes](../../_images/resources/tutorials/merge_conflict/merge-conflicts-06.png)
 
+Here you can see I've applied the blue change and discarded the first red change, because I don't want to delete the
+"Michielu Menning" entry that was pulled in from the server.
+
 ![Merge Revisions dialog box in WebStorm while making changes](../../_images/resources/tutorials/merge_conflict/merge-conflicts-07.png)
+
+I finished by applying the bottom change from the server, but then I edited it manually to remove the unwanted Nick Cage
+entries.
 
 ![Merge Revisions dialog box in WebStorm after making changes](../../_images/resources/tutorials/merge_conflict/merge-conflicts-08.png)
 
