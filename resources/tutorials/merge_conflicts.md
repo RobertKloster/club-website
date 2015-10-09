@@ -9,7 +9,8 @@
 Don't worry! Though sometimes daunting (and almost always annoying), merge conflicts are an normal part of
 collaborative programming. Merge conflicts occur when two people are trying to merge pieces of code into the repository
 that change the same thing. The git version control system does its best to try to merge code together automatically,
-but where there is room for doubt, it defers to the users to resolve the conflicts.
+but where there is room for doubt, it defers to the users to resolve the conflicts. In this tutorial I'll be talking
+about how to handle merge conflicts using SourceTree and WebStorm.
 
 ## Is there a way to avoid having merge conflicts?
 
@@ -44,7 +45,15 @@ section of code as someone else, talk to them. They may want to wait to work on 
 
 ### Step 1: Pull upstream/master into your local branch
 
-![Using SourceTree to pull upstream master into your local branch](../../_images/resources/tutorials/merge_conflict/merge-conflicts-01.png)
+In SourceTree, ensure that you are working in the correct local branch, because when you pull another branch into it,
+the changes will only affect the active branch. In the left sidebar under **Branches** you can see that
+"Nathan_Karasch_member_gridsq..." is bolded, meaning it's the active branch.
+
+If this is your first time pulling from the main repository, you'll need to add it
+
+![Adding another remote repository in SourceTree](../../_images/resources/tutorials/merge_conflict/merge-conflicts-01a.png)
+
+![Using SourceTree to pull upstream master into your local branch](../../_images/resources/tutorials/merge_conflict/merge-conflicts-01b.png)
 
 ![Hitting a merge conflict in SourceTree when trying to pull upstream master into your local branch](../../_images/resources/tutorials/merge_conflict/merge-conflicts-02.png)
 
