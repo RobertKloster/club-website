@@ -1,16 +1,16 @@
 # Handling Merge Conflicts
 
-![Nathan Karasch](../../_images/members/Karasch-Nathan-sm.jpg) by Nathan Karasch - uploaded 8 Oct 2015
+![Nathan Karasch](../../_images/members/Karasch-Nathan-sm.jpg) By Nathan Karasch - uploaded 8 Oct 2015
 
 ![A GitHub pull request showing merge conflicts](../../_images/resources/tutorials/merge_conflict/merge-conflicts-00.png)
 
-## Created a pull request and ran into this?
+## Created a pull request and ran into this? ⤴︎
 
-Don't worry! Though sometimes daunting (and almost always annoying), merge conflicts are an normal part of
+Don't worry! Though sometimes daunting (and almost always annoying), merge conflicts are a normal part of
 collaborative programming. Merge conflicts occur when two people are trying to merge pieces of code into the repository
 that change the same thing. The git version control system does its best to try to merge code together automatically,
 but where there is room for doubt, it defers to the users to resolve the conflicts. In this tutorial I'll be talking
-about how to handle merge conflicts using SourceTree and WebStorm.
+about how to resolve merge conflicts using SourceTree and WebStorm.
 
 ## Is there a way to avoid having merge conflicts?
 
@@ -41,30 +41,30 @@ pull requests merged.
 Save yourself hours of wasted effort by communicating with your team! If you *know* you'll be working on the same
 section of code as someone else, talk to them. They may want to wait to work on it until you're done, or vice versa.
 
-## How to Resolve Merge Conflicts Using SourceTree
+## How to Resolve Merge Conflicts Using SourceTree and WebStorm
 
 ### Step 1: Pull upstream/master into your local branch
 
 In SourceTree, ensure that you are working in the correct local branch, because when you pull another branch into it,
 the changes will only affect the active branch. In the left sidebar under **Branches** you can see that
-"Nathan_Karasch_member_gridsq..." is bolded, meaning it's the active branch.
+`Nathan_Karasch_member_gridsq...` is bolded, meaning it's the active branch.
 
 If this is your first time pulling from the main repository, you'll need to add it to your list of remote repositories.
-In the main menu, click **Repository** > **Repository Settings**. Click **Add**, and paste in the URL from the main
-repository (in our case, it's the ISU-WebDevClub/club-website repo). I've given it the name "upstream". Click **OK**.
+In the main menu, click **Repository** > **Repository Settings**. Then click **Add**, and paste in the URL from the main
+repository (in our case, it's the `ISU-WebDevClub/club-website` repo). I've given it the name `upstream`. Click **OK**.
 
 ![Adding another remote repository in SourceTree](../../_images/resources/tutorials/merge_conflict/merge-conflicts-01a.png)
 
-If you added "upstream" for the first time, you won't see any of it's branches until you *fetch* from upstream. To do
-that, right click on the upstream remote in the sidebar and click **Fetch from upstream**. You'll see a small caret
-appear to the left of the remote, and you can expand it to see all the branches in that repository. The "master" branch
+If you added `upstream` for the first time, you won't see any of its branches until you *fetch* from `upstream`. To do
+that, right click on the `upstream` remote in the sidebar and click **Fetch from upstream**. You'll see a small caret
+appear to the left of the remote, and you can expand it to see all the branches in that repository. The `master` branch
 is the one we care about.
 
-Finally, to pull upstream/master into your local branch, right click the master branch and click **Pull upstream/master into [your branch]**.
+Finally, to pull `upstream/master` into your local branch, right click `master` and click **Pull upstream/master into [your branch name]**.
 
 ![Using SourceTree to pull upstream master into your local branch](../../_images/resources/tutorials/merge_conflict/merge-conflicts-01b.png)
 
-After it attempts to pull in the changes from upstream, you'll see the following error message. It's basically telling
+After it attempts to pull in the changes from `upstream`, you'll see the following error message. It's basically telling
 you what you already know: that you have merge conflicts that have to be resolved before the pulled changes can be
 committed.
 
@@ -80,7 +80,7 @@ view in the left sidebar, you can see all the files from the pull have been stag
 #### Understanding the added notation
 
 For every conflict in a file, there are three special lines that appear: `<<<<<<< HEAD`, `=======`, and 
-`>>>>>>> [gibberish]`. The stuff in between the angle brackets is the stuff in conflict. The equals sign line separates
+`>>>>>>> [revision]`. The stuff in between the angle brackets is the stuff in conflict. The equals sign line separates
 the two conflicting pieces of code. The stuff in the upper part is what's in your local branch (on your computer).
 The stuff in the lower part is what you're trying to merge into your branch. The goal is to make them both work together,
 and then remove the `<<<<<<<`, `=======`, and `>>>>>>>` lines.
