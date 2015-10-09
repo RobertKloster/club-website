@@ -2,6 +2,8 @@
 
 ![Nathan Karasch](../../_images/members/Karasch-Nathan-sm.jpg) By Nathan Karasch - uploaded 8 Oct 2015
 
+-------------------
+
 ![A GitHub pull request showing merge conflicts](../../_images/resources/tutorials/merge_conflict/merge-conflicts-00.png)
 
 ## Created a pull request and ran into this? ⤴︎
