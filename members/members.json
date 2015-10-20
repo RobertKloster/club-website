@@ -16,13 +16,34 @@
       "image": "../_images/members/branden-lange-md.jpg",
       "description": "What are snails even trying to do?"
     },
+    "Robert Kloster": {
+      "image": "../_images/members/Kloster-Robert-md.jpg",
+      "description": "Senior in Software Engineering."
+    },
     "Steff Bisinger": {
       "image": "../_images/members/steff-bisinger-md.jpg",
       "description": "WDC Founding Member, Model#INFOSEC1337"
     },
+    "Blake Skaja": {
+      "image": "../_images/members/Skaja-Blake-md.jpg",
+      "description": "WDC Founding Member. Just a web developing fool."
+    },
+    "Nich Cage": {
+      "image": "http://www.placecage.com/g/450/450",
+      "description": "I am not a demon. I am a lizard, a shark, a heat-seeking panther."
+    },
+    "Das Nick Cage": {
+      "image": "http://www.placecage.com/g/500/500",
+      "description": "Weirder than Weird Al"
+    },
+    "Leelabari Fulbel": {
+      "image": "../_images/leeimage.jpg",
+      "description": "Freshman in Software Engineering"
+    },
     "Robert Stemig": {
       "image": "../_images/members/stemig-robert-md.jpeg",
       "description": "Junior in Computer Engineering"
+
     }
   }
 }
