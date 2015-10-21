@@ -43,7 +43,10 @@
     "Robert Stemig": {
       "image": "../_images/members/stemig-robert-md.jpeg",
       "description": "Junior in Computer Engineering"
-
+    },
+    "Sydney Ehlinger": {
+      "image": "../_images/members/Ehlinger-Sydney-md.jpeg",
+      "description": "Freshman in Computer Science"
     }
   }
 }
