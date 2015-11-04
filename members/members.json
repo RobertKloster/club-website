@@ -44,9 +44,15 @@
       "image": "../_images/members/stemig-robert-md.jpeg",
       "description": "Junior in Computer Engineering"
     },
+
+    "Sydney Ehlinger": {
+      "image": "../_images/members/Ehlinger-Sydney-md.jpg",
+      "description": "Freshman in Computer Science"
+    },
     "Paul Biermann": {
       "image": "../_images/members/paul-biermann-md.jpg",
       "description": "Sophomore in Computer Science"
+
     }
 
   }
