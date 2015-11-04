@@ -43,7 +43,11 @@
     "Robert Stemig": {
       "image": "../_images/members/stemig-robert-md.jpeg",
       "description": "Junior in Computer Engineering"
-
+    },
+    "Paul Biermann": {
+      "image": "../_images/members/paul-biermann-md.jpg",
+      "description": "Sophomore in Computer Science"
     }
+      
   }
 }
